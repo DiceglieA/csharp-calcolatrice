@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 public class CalcoliHelper
 {
-    public static int SommaInteri(int num1, int num2) => num1 * num2;
-    public static double SommaDecimali(double num1, double num2) => num1 * num2;
+    public static int SommaInteri(int num1, int num2) => num1 + num2;
+    public static double SommaDecimali(double num1, double num2) => num1 + num2;
 
     public static int DifferenzaInteri(int num1, int num2) => num1 - num2;
     public static double DifferenzaDecimali(double num1, double num2) => num1 - num2;
