@@ -28,3 +28,7 @@ Console.WriteLine(CalcoliHelper.Minimo(10, 2));
 Console.WriteLine(CalcoliHelper.Minimo(10.2, 2.12));
 Console.WriteLine(CalcoliHelper.Massimo(10, 2));
 Console.WriteLine(CalcoliHelper.Massimo(10.2, 2.12));
+
+//bonus 
+
+Console.WriteLine(CalcoliHelper.Potenza(10, 2));

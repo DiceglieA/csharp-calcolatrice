@@ -46,5 +46,24 @@ public class CalcoliHelper
     //Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti che abbiamo visto oggi…Quale?
     //    Il principio del polimorfismo
 
-   
+    //bonus
+    public static double Potenza(int @base, int esponente)
+    {
+        int result = @base;
+        if (esponente is 0) return 1;
+        else if (@base is 0 && esponente is 0) return 1;
+        else if (@base is 0) return 0;
+        else if (esponente < 0)
+        {
+            return 1 / Potenza(@base, ValoreAssoluto(esponente));
+        }
+        else
+        {
+            for (int i = 1; i < esponente; i++)
+            {
+                result *= @base;
+            }
+            return result;
+        }
+    }
 }
