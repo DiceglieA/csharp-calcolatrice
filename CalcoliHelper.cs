@@ -14,27 +14,31 @@ public class CalcoliHelper
     public static int MoltiplicazioneInteri(int num1, int num2) => num1 * num2;
     public static double MoltiplicazioneDecimali(double num1, double num2) => num1 * num2;
 
-    public static int ValoreAssoluto(int n)
+    public static int ValoreAssoluto(int num)
     {
-        if (n < 0)
+        if (num < 0)
         {
-            return n * -1;
+            return num * -1;
         }
         else
         {
-            return n;
+            return num;
         }
     }
-    public static double ValoreAssolutoDecimale(double n)
+    public static double ValoreAssolutoDecimale(double num)
     {
-        if (n < 0)
+        if (num < 0)
         {
-            return n * -1;
+            return num * -1;
         }
         else
         {
-            return n;
+            return num;
         }
+    }
+    public static int MinimoNum(int num1, int num2) => num1 < num2 ? num1 : num2;
+    public static double MinimoDecimale(double num1, double num2) => num1 < num2 ? num1 : num2;
+    public static int MassimoNum(int num1, int num2) => num1 > num2 ? num1 : num2;
+    public static double MassimoNumDecimale(double num1, double num2) => num1 > num2 ? num1 : num2;
 
-    }
 }
