@@ -14,9 +14,27 @@ public class CalcoliHelper
     public static int MoltiplicazioneInteri(int num1, int num2) => num1 * num2;
     public static double MoltiplicazioneDecimali(double num1, double num2) => num1 * num2;
 
-    public static
+    public static int ValoreAssoluto(int n)
+    {
+        if (n < 0)
+        {
+            return n * -1;
+        }
+        else
+        {
+            return n;
+        }
+    }
+    public static double ValoreAssolutoDecimale(double n)
+    {
+        if (n < 0)
+        {
+            return n * -1;
+        }
+        else
+        {
+            return n;
+        }
 
-
-
+    }
 }
-
